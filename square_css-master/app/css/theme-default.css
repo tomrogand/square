@@ -1,0 +1,61 @@
+:root{
+    --text-base: #333;
+    --text-white: #fafafa;
+    --primary: #0088ce;
+    --primary-highlight: #39a5dc;
+    --secondary: #393f44;
+    --secondary-highlight: #72767b;
+    --background: #fafafa;
+    --background-secondary: #ededed;
+    --success: #3f9c35;
+    --success-highlight: #9ecf99;
+    --info: #007a87;
+    --info-highlight: #7dbdc3;
+    --warning: #ec7a08;
+    --warning-highlight: #f39d3c;
+    --danger: #b30000;
+    --danger-highlight: #cc0000;
+    --accent-black: #0c0c0c;
+    --accent-grey: #777;
+    --accent-white: #fafafa;
+    --muted: #999;
+    --muted-highlight: #666;
+    --divider: #d8d8d8;
+}
+
+.sq-primary{
+    color: var(--text-white);
+    background-color: var(--primary);
+}
+.sq-secondary{
+    color: var(--text-white);
+    background-color: var(--secondary);
+}
+.sq-success{
+    color: var(--text-white);
+    background-color: var(--success);
+}
+.sq-info{
+    color: var(--text-white);
+    background-color: var(--info);
+}
+.sq-warning{
+    color: var(--text-white);
+    background-color: var(--warning);
+}
+.sq-danger{
+    color: var(--text-white);
+    background-color: var(--danger);
+}
+.sq-background{
+    background-color: var(--background);
+}
+.sq-background-secondary{
+    background-color: var(--background-secondary);
+}
+.sq-accent-white{
+    color: var(--accent-white);
+}
+.sq-accent-grey{
+    color: var(--accent-grey)
+}

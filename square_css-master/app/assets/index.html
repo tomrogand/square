@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Brunch</title>
+  <link rel="stylesheet" href="/app.css">
+  <link rel="stylesheet" href="../styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed" rel="stylesheet">
+  <script src="/vendor.js"></script>
+  <script src="/app.js"></script>
+  <script>require('initialize');</script>
+</head>
+<body class="container">
+
+    <!-- about and Toc start -->
+    <h1>Square CSS Documentation</h1>
+    <hr class="air" />
+    <article>
+        Square CSS description
+        All the lorem ipsum in the world goes ehre 
+    </article>
+    <hr class="air"/>
+
+    <dl class="sq-dl sq-dl-divider air">
+        <dt>Table of Content</dt>
+        <dd><a href="#colors">Colors</a></dd>
+        <dd><a href="#layout">Layout</a></dd>
+        <dd><a href="#panels">Panels</a></dd>
+        <dd><a href="#card">Card</a></dd>
+        <dd><a href="#list">List</a></dd>
+        <dd><a href="#table">Table</a></dd>
+        <dd><a href="#forms">Forms</a></dd>
+        <dd><a href="#grid">g</a></dd>
+        <dd><a href="#grid">grid</a></dd>
+    </dl>
+
+    <hr/>
+
+    <!-- about and Toc end  -->
+<!-- Layout start -->
+    <h1 id="#layout">Layout</h1>
+    <section>
+    <h3 id="Layout">Grid</h3>
+    <p class="air">
+        Base Layout system. contains a base 5 row and 9 column grid <br/>
+        the grid accepts panels that works as logical separator between content <br/>
+        the panels contain other cards with content. <br/>
+
+    </p>
+    <dl class="sq-dl sq-dl-divider">
+        <dt>Classes</dt>
+        <dd><strong>Sq-grid-main-desktop:</strong> - define a 5 row, 9 col grid</dd>
+        <dd><strong>Sq-grid-gap:</strong> - Adds a 1em gap betwen rows and columns </dd>
+        <dd><strong>Sq-grid-gap-row:</strong> - Adds a 1em gap betwen rows </dd>
+        <dd><strong>Sq-grid-gap-column:</strong> - Adds a 1em gap betwen columns</dd>
+    </dl>
+    <div class="air">
+        <div class="sq-grid-main-desktop sq-grid-gap" style="height:250px; width:450px;">
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+            <div style="border:solid 1px grey;"></div>
+        </div>
+    </div>
+    <div class="air">
+        <pre class="code" >
+            <code>
+                &ltdiv class="sq-grid-main-desktop sq-grid-gap"&gt
+                    ...Add panels here...
+                &lt/div&gt
+            </code>
+        </pre>
+    </div>
+    <div>
+        <a href=" https://codepen.io/Rogstaa/pen/oqQovR">Interactve demo</a>
+    </div>
+    <hr class="air" />
+    <a href="#top"></a>
+    </section>
+    <!-- Layout end -->
+
+    <!-- panel start -->
+    <section>
+        <h3 id="panels">Panels</h3>
+        <p class="air">
+            Panels are placed on a grid as a logical divider between different types of content.
+            all panels content are adjust by use of flex classes
+        </p>
+        <dl class="sq-dl sq-dl-divider air" >
+            <dt>Classes</dt>
+            <dd><strong>sq-panel</strong>-Base panel class with all the common functionality.</dd>
+            <dd><strong>sq-panel-main-top</strong> - Creates a panel that spans the 2 first rows </dd>
+            <dd><strong>sq-panel-main-bottom</strong>- Creates apanel that spans three bottom rows</dd>
+            <dd><strong>sq-panel-main</strong>- creates a panel that spans the entire grid</dd>
+        </dl>
+        <div class="air">
+            <div class="sq-grid-main-desktop gridsize sq-grid-gap" >
+                <div class="sq-panel sq-panel-main sq-warning">
+                    main
+                </div>
+                <div class="sq-panel sq-panel-main-top sq-success">
+                    top overlays main panel by being rendered after use z index to change
+                </div>
+                <div class="sq-panel sq-panel-main-bottom sq-info">
+                    bottom overlays main panel by being rendered after use z index to chang
+                </div>
+            </div>
+        </div>
+        <pre class="code">
+            <code>
+            &ltdiv class="sq-grid-main-desktop sq-grid-gap" &gt
+                &ltdiv class="sq-panel sq-panel-main sq-warning"&gt
+                    main
+                &lt/div&gt
+                &ltdiv class="sq-panel sq-panel-main-top sq-success"&gt
+                    top overlays main panel by being rendered after use z index to change
+                &lt/div&gt
+                &ltdiv class="sq-panel sq-panel-main-bottom sq-info"&gt
+                    bottom overlays main panel by being rendered after use z index to chang
+                &lt/div&gty
+            &lt/div&gt
+            </code>
+        </pre>
+
+        <hr class="air" />
+        <a href="#top"></a>
+    </section>
+    <!--panel end-->
+
+    <!--cards start-->
+    <section>
+        <h3 id="cards">Cards</h3>
+        <p>
+            Base card containing a header body and footer. footer and header must never be larger than 20% of total height
+        </p>
+        <dl class="sq-dl sq-dl-divider" >
+            <dt>Classes</dt>
+            <dd><strong></strong>-</dd>
+        </dl>
+        <div style="display:flex;">
+            <div class="sq-card air" style="height:150px; width:100px;">
+                <div class="sq-info">
+                    header
+                </div>
+                                <div>
+                    default card contains header body and footer
+                </div>
+                <div class="sq-warning">
+                    footer
+                </div>
+            </div>
+            <div class="sq-card" style="height:150px; width:100px;">
+                <div class="sq-card-body-footer">
+                    body footer
+                </div>
+                <div class="sq-crd-header">
+                    header
+                </div>
+            </div>
+
+        </div>
+        <hr class="air" />
+        <a href="#top"></a>
+    </section> 
+    <!--cards end-->
+
+    <!--Align content-->
+    <section>
+        <h1>Align content</h1>
+        <p class="air"> CSS to help position the element in HTML</p>
+        <!--Justify Content Start-->
+        <h3>Justify Content</h3>
+        <p class="air"> Position Elements Horizontal <-- . --></p>
+        <dl class="sq-dl sq-dl-divider">
+            <dt>Classes</dt>
+            <dd><strong>sq-justify-center</strong> - Horisontaly Position element to the center</dd>
+            <dd><strong>sq-justify-start</strong> - Position to the beginning of the container</dd>
+            <dd><strong>sq-justify-end</strong> - Position to the end of the container</dd>
+            <dd><strong>sq-justify-between</strong> - Have space between the elements</dd>
+            <dd><strong>sq-justify-around</strong> - Have space before, between and after the elements</dd>
+        </dl>
+        <div class="air">
+            <div class="sq-aligning-container sq-justify-center sq-justify-around">
+                <div class="sq-aligning-box"></div>
+                <div class="sq-aligning-box"></div>
+                <div class="sq-aligning-box"></div>
+            </div>
+        </div>
+        <pre class="code1">
+            <code>
+                &ltdiv class="sq-justify-center sq-justify-around" &gt
+                    ...add content/text+++...
+                &lt/div&gt
+            </code>
+        </pre>
+        <div>
+            <a href="https://codepen.io/bjornum/pen/KRmeVO?editors=1100">Interactive Demo</a>
+        </div>
+        <hr class="air"/>
+        <a href="#top"></a>
+    </section>
+    <!--Justify Content End-->
+
+    <!--Align Items Start-->
+
+    <section>
+        <h3>Align Items</h3>
+        <p class="air"> Short Info om Align Items</p>
+        <dl class="sq-dl sq-dl-divider">
+            <dt>Classes</dt>
+            <dd><strong>sq-align-center</strong> - Vertically position element to the center</dd>
+            <dd><strong>sq-align-start</strong> - Position to the top of the container</dd>
+            <dd><strong>sq-align-end</strong> - Position to the bottom of the container</dd>
+            <dd><strong>sq-align-stretch</strong> - Stretch the element to fit the container</dd>
+            <dd><strong>sq-align-baseline</strong> - Position to the Baseline (starting point) of the conteiner</dd>
+        </dl>
+        <div class="air">
+            <div class="sq-aligning-container sq-align-center">
+                <div class="sq-aligning-box"></div>
+                <div class="sq-aligning-box"></div>
+                <div class="sq-aligning-box"></div>
+            </div>
+        </div>
+        <pre class="code1">
+            <code>
+                &ltdiv class="sq-align-center" &gt
+                    ...add content/text+++...
+                &lt/div&gt
+            </code>
+        </pre>
+        <div>
+            <a href="https://codepen.io/bjornum/pen/YLVodK?editors=1100">Interactive Demo</a>
+        </div>
+        <hr class="air"/>
+        <a href="#top"></a>
+    </section>
+    <!--Align Items End-->
+
+    
+
+
+
+    <!-- <section> -->
+    <!-- <h3 id="Layouy">Layout</h3> -->
+    <!-- <p> -->
+    <!-- Base Layout system. contains a base 5 row and 9 column grid -->
+    <!-- </p> -->
+    <!-- <dl class="sq-dl sq-dl-divider" > -->
+    <!-- <dt>Classes</dt> -->
+    <!-- <dd><strong></strong>-</dd> -->
+    <!-- </dl> -->
+    <!-- <div> -->
+    <!-- visual cue -->
+    <!-- </div> -->
+    <!-- <hr class="air" /> -->
+    <!-- <a href="#top"></a> -->
+    <!-- </section> --> 
